@@ -25,7 +25,7 @@ def add_product():
     conn = sqlite3.connect('inventory.db')
     cursor = conn.cursor()
     cursor.execute('''
-        INSERT INTO PRODUCTS(NAME, CATEGORY, QUANTITY)2
+        INSERT INTO PRODUCTS(NAME, CATEGORY, QUANTITY)
                    
         VALUES (?, ?, ?)
     ''', (name, category, quantity))
